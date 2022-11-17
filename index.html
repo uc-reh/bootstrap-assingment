@@ -45,7 +45,7 @@
             <div class="col-lg-1 col-md-2">
                 <button type="button" class="btn dropdown-toggle mx-2 my-2 border-primary p-1"
                     tabindex="6">uCertify&#8198;&#8198;&#8198;
-                    &#8198;&#8198;&#8198;&#8198;<span class="icomoon-cross-new-1"></span></button>
+                    &#8198;&#8198;&#8198;&#8198;<span>x</span></button>
             </div>
             <div class="col-6 mx-4 col-md-7">
                 <div class="planner_nav_first_tab btn btn-group">
@@ -70,12 +70,12 @@
             </div>
             <div class="col-4 col-md-2">
 
-                <div class="dropdown d-flex my-2 flex-row-reverse">
-                    <button type="button" class="btn border-primary dropdown-toggle" aria-disabled="true">
+                <div class="dropdown d-flex my-2 flex-row-reverse float-lg-left">
+                    <button type="button" class="btn border-primary dropdown-toggle" aria-disabled="false" tabinex="-1">
                         <span class="icomoon-24px-download-2" tabindex="11">Export</span>
 
                     </button>
-                    <button type="button" class="btn border-primary text-nowrap mx-1" aria-disabled="true">
+                    <button type="button" class="btn border-primary text-nowrap mx-1" aria-disabled="false" tabinex="-1">
                         <span tabindex="12">LMS configuration</span></button>
                 </div>
             </div>
@@ -83,15 +83,21 @@
     </div>
 
     <div class="container">
-        <div class="row">
-            <div class="mx-3 my-2">
+        <div class="row justify-content-between">
+            <!-- <div class="mx-2 my-2 no-gutters pt-2">
                 <button type="button" id="#" class="btn btn-light" data-toggle="#" aria-haspopup="true"
                     aria-disabled="true" tabindex="13"> <span class=" icomoon-search"></span>
                 </button>
 
-            </div>
-            <div class="col-8">
+            </div> -->
+            <div class="col-8 no-gutters pl-0 my-2">
                 <div class="planner_nav_first_tab btn btn-group">
+                    <div class="mr-2">
+                        <button type="button" id="#" class="btn btn-light" data-toggle="#" aria-haspopup="true" aria-disabled="true"
+                            tabindex="13"> <span class=" icomoon-search"></span>
+                        </button>
+                    
+                    </div>
                     <a class="btn btn-light tabactive px-3 bg-secondary text-white active" aria-disabled="true">
                         <span class="d-xl-inline-block  ml icomoon-roster-sm" tabindex="14"></span>
                         <p class="d-sm-none d-lg-inline">Roster</p>
@@ -124,7 +130,7 @@
             <div class="col-0">
 
             </div>
-            <div class="col-2 my-2 d-flex">
+            <div class="col-2 my-2 d-flex mx-5 pl-2">
                 <p class="text-nowrap mx-2">Test Mode only</p>
                 <div class="custom-control custom-switch">
 
@@ -173,7 +179,7 @@
             </thead>
             <tbody>
                 <!--Need to disable accessibility-->
-                <tr class="bg-light bg-gradient opacity-25 text-muted">
+                <tr class="text-muted disabled1">
                     <td class="text-center"><span class="icomoon-checkbox-unchecked"></span>
                         1
 
@@ -187,7 +193,7 @@
                     <td>APP-Training
                         <div class="d-block">
                             <small>app-training</small>
-                            <div class="d-flex p-1">
+                            <div class="d-flex p-1 text-success">
                                 <span
                                     class="d-xl-inline-block  nav_text icomoon-project-management-44px icomoon-24px-settings"></span>
                                 <span
@@ -207,7 +213,7 @@
                                 <circle r="5.4" cx="10" cy="10" fill="transparent" stroke="green" stroke-width="10"
                                     stroke-dasharray="18.99 38.4" transform="rotate(-90) translate(-20)" />
                             </svg>
-                            <p class="text-success" tabindex="0">58%</p>
+                            <p class="text-success">58%</p>
                         </article>
                     </td>
                     <td class="text-nowrap">24-APRIL-19
@@ -244,7 +250,7 @@
                     <td>APP-Training
                         <div class="d-block">
                             <small>app-training</small>
-                            <div class="d-flex p-1">
+                            <div class="d-flex p-1 text-success">
                                 <span
                                     class="d-xl-inline-block  nav_text icomoon-project-management-44px icomoon-24px-settings"></span>
                                 <span
@@ -264,7 +270,7 @@
                                 <circle r="5" cx="10" cy="10" fill="transparent" stroke="green" stroke-width="10"
                                     stroke-dasharray="18.99 38.4" transform="rotate(-90) translate(-20)" />
                             </svg>
-                            <p class="text-success" tabindex="0">64%</p>
+                            <p class="text-success">64%</p>
                         </article>
                     </td>
                     <td class="text-nowrap">18-FEB-17
