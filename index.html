@@ -49,28 +49,33 @@
             </div>
             <div class="col-6 mx-4 col-md-7">
                 <div class="planner_nav_first_tab btn btn-group">
-                    <a class="btn btn-light tabactive px-3 bg-secondary text-white">
-                        <span class="d-xl-inline-block  ml icomoon-roster-sm" tabindex="7">Roster</span>
+                    <a class="btn btn-light tabactive px-3 bg-secondary text-white active">
+                        <span class="d-xl-inline-block  ml icomoon-roster-sm" tabindex="7"></span>
+                        <p class="d-sm-none d-lg-inline">Roster</p>
+                    </a>
+                    <a class="btn btn-light tabactive px-3 dropdown-toggle">
+                        <span class="d-xl-inline-block  nav_text icomoon-project-management-44px" tabindex="8"></span>
+                        <p class="d-sm-none d-lg-inline">Manage
+                        </p>
+                    </a>
+                    <a class="btn btn-light tabactive px-3 dropdown-toggle">
+                        <span class="d-xl-inline-block  nav_text icomoon-reports-sm" tabindex="9"></span>
+                        <p class="d-sm-none d-lg-inline">Report</p>
                     </a>
                     <a class="btn btn-light tabactive px-3">
-                        <span class="d-xl-inline-block  nav_text icomoon-project-management-44px"
-                            tabindex="8">Manage</span>
-                    </a>
-                    <a class="btn btn-light tabactive px-3">
-                        <span class="d-xl-inline-block  nav_text icomoon-reports-sm" tabindex="9">Report</span>
-                    </a>
-                    <a class="btn btn-light tabactive px-3">
-                        <span class="d-xl-inline-block  nav_text icomoon-add-license-enroll-sm"
-                            tabindex="10">Enroll</span>
+                        <span class="d-xl-inline-block  nav_text icomoon-add-license-enroll-sm" tabindex="10"></span>
+                        <p class="d-sm-none d-lg-inline">Enroll</p>
                     </a>
                 </div>
             </div>
             <div class="col-4 col-md-2">
 
                 <div class="dropdown d-flex my-2 flex-row-reverse">
-                    <button type="button" class="btn border-primary" aria-disabled="true">
-                        <span class="icomoon-24px-download-2" tabindex="11"></span>Export</button>
-                    <button type="button" class="btn border-primary text-nowrap" aria-disabled="true">
+                    <button type="button" class="btn border-primary dropdown-toggle" aria-disabled="true">
+                        <span class="icomoon-24px-download-2" tabindex="11">Export</span>
+
+                    </button>
+                    <button type="button" class="btn border-primary text-nowrap mx-1" aria-disabled="true">
                         <span tabindex="12">LMS configuration</span></button>
                 </div>
             </div>
@@ -81,34 +86,37 @@
         <div class="row">
             <div class="mx-3 my-2">
                 <button type="button" id="#" class="btn btn-light" data-toggle="#" aria-haspopup="true"
-                    aria-disabled="true" tabindex="13"> <span class=" icomoon-search"></span></button>
+                    aria-disabled="true" tabindex="13"> <span class=" icomoon-search"></span>
+                </button>
 
             </div>
             <div class="col-8">
                 <div class="planner_nav_first_tab btn btn-group">
-                    <a class="btn btn-light tabactive px-3 bg-secondary text-white" aria-disabled="true">
-                        <span class="d-xl-inline-block  ml icomoon-roster-sm" tabindex="14">Roster</span>
+                    <a class="btn btn-light tabactive px-3 bg-secondary text-white active" aria-disabled="true">
+                        <span class="d-xl-inline-block  ml icomoon-roster-sm" tabindex="14"></span>
+                        <p class="d-sm-none d-lg-inline">Roster</p>
                     </a>
                     <a class="btn btn-light tabactive px-3" aria-disabled="true">
 
                         <span class="d-xl-inline-block  nav_text icomoon-project-management-44px icomoon-24px-settings"
-                            tabindex="15">Lessons</span>
+                            tabindex="15"></span>
+                        <p class="d-sm-none d-lg-inline">Lessons</p>
                     </a>
                     <a class="btn btn-light tabactive px-3" aria-disabled="true">
 
                         <span class="d-xl-inline-block  nav_text icomoon-reports-sm icomoon-testprep-or-practice-test"
-                            tabindex="16">Practice</span>
+                            tabindex="16"></span>
+                        <p class="d-sm-none d-lg-inline d-lg-inline">Practice</p>
                     </a>
-                    <a class="btn btn-light tabactive px-3" aria-disabled="true">
+                    <a class="btn btn-light tabactive px-3 dropdown-toggle" aria-disabled="true">
 
-                        <span class="d-xl-inline-block  nav_text icomoon-add-license-enroll-sm icomoon-24px-settings-1"
-                            tabindex="17">Prepengine</span>
+                        <span class="d-xl-inline-block  nav_text  icomoon-24px-settings-1" tabindex="17"></span>
+                        <p class="d-sm-none d-lg-inline">Prepengine</p>
                     </a>
-                    <a class="btn btn-light tabactive px-3" aria-disabled="true">
+                    <a class="btn btn-light tabactive px-3 dropdown-toggle" aria-disabled="true">
 
-                        <span
-                            class="d-xl-inline-block  nav_text icomoon-add-license-enroll-sm icomoon-add-license-enroll-sm"
-                            tabindex="18">Analytics</span>
+                        <span class="d-xl-inline-block  nav_text  icomoon-graph-2" tabindex="18"></span>
+                        <p class="d-sm-none d-lg-inline">Analytics</p>
                     </a>
                 </div>
 
@@ -116,16 +124,18 @@
             <div class="col-0">
 
             </div>
-            <div class="col-2 my-2">
-                <div class="custom-control custom-switch" aria-disabled="true">
-                    <input type="checkbox" class="custom-control-input" aria-disabled="true">
-                    <label class="custom-control-label text-nowrap" tabindex="19">Test Mode Only</label>
+            <div class="col-2 my-2 d-flex">
+                <p class="text-nowrap mx-2">Test Mode only</p>
+                <div class="custom-control custom-switch">
+
+                    <input type="checkbox" class="custom-control-input" id="customSwitches">
+                    <label class="custom-control-label" for="customSwitches"></label>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <table class="table table-bordered table-striped">
+        <table class="table table-bordered table-striped table-responsive">
             <thead>
                 <tr>
                     <th class="font-weight-normal text-center">
@@ -171,7 +181,7 @@
                     <td class="text-center" colspan="2">
                         <div class="d-flex">
                             <img src="spd.jpg" alt="image.png" class="img-responsive img-circle rounded-circle mw-55" />
-                            <p class="text-nowrap text-muted">Sundar...</p>
+                            <p class="text-nowrap text-muted my-3 mx-1">Sundar...</p>
                         </div>
                     </td>
                     <td>APP-Training
@@ -190,7 +200,16 @@
                             <small class="bg-primary">new</small>
                         </div>
                     </td>
-                    <td class="text-primary"><img src="neww.png" alt="" class="d-block">58%</td>
+                    <td class="text-primary">
+                        <article class="pl-3 pt-3 d-flex flex-column">
+                            <svg height="23" width="23" viewBox="0 0 20 20">
+                                <circle r="10" cx="10" cy="10" fill="#e9ebe5" />
+                                <circle r="5.4" cx="10" cy="10" fill="transparent" stroke="green" stroke-width="10"
+                                    stroke-dasharray="18.99 38.4" transform="rotate(-90) translate(-20)" />
+                            </svg>
+                            <p class="text-success" tabindex="0">58%</p>
+                        </article>
+                    </td>
                     <td class="text-nowrap">24-APRIL-19
                         <small class="d-block text-nowrap">2.9 Years</small>
                     </td>
@@ -215,9 +234,11 @@
                     </td>
                     <td class="text-center" colspan="2">
                         <div class="d-flex">
-                            <img src="bill.jpg" alt="image.png"
-                                class="img-responsive img-circle rounded-circle mw-55" />
-                            <p class="text-nowrap">Bill Ga...</p>
+                            <svg height="40" width="40" viewBox="0 0 20 20">
+                                <circle r="10" cx="10" cy="10" fill="#04AA6D" />
+                                <text x="4" y="14" class="font9" fill="white">BG</text>
+                            </svg>
+                            <p class="text-nowrap my-2 mx-2">Bill Ga...</p>
                         </div>
                     </td>
                     <td>APP-Training
@@ -233,10 +254,19 @@
                     </td>
                     <td>Swati Kesarvani
                         <div class="d-block">
-                            <small class="bg-primary">merged sambhunath app</small>
+                            <small class="bg-primary text-nowrap">merged sambhunath app</small>
                         </div>
                     </td>
-                    <td class="text-primary"><img src="neww.png" alt="" class="d-block">64%</td>
+                    <td class="text-primary">
+                        <article class="pl-3 pt-3 d-flex flex-column">
+                            <svg height="23" width="23" viewBox="0 0 20 20">
+                                <circle r="10" cx="10" cy="10" fill="#e9ebe5" />
+                                <circle r="5" cx="10" cy="10" fill="transparent" stroke="green" stroke-width="10"
+                                    stroke-dasharray="18.99 38.4" transform="rotate(-90) translate(-20)" />
+                            </svg>
+                            <p class="text-success" tabindex="0">64%</p>
+                        </article>
+                    </td>
                     <td class="text-nowrap">18-FEB-17
                         <small class="d-block text-nowrap">4.3 Years</small>
                     </td>
